@@ -68,29 +68,28 @@
 
 	<div class="container">
 		<div class="row">
-			<section>
-				<div class="col-md-10">
-					<div class="panel panel-default border-less">
-						<div class="panel-heading border-less">Top Picks</div>
-					   	<div class="panel-body text-center border-less">
-					      <h2>Project Overview</h2>
-					   </div>
+			<div class="col-md-10">
+				<div class="panel panel-default border-less">
+					<div class="panel-heading border-less">Top Picks</div>
+					<div id="overview"  class="panel-body text-center border-less">
+					      <img class="img-responsive" src="{{ STATIC_URL }}/images/connectree.png" alt="...">
+					      <h2>Project Overview 1</h2>
 					</div>
 				</div>
-			</section>
+			</div>
 			<div id="category" class="col-md-2">
 				<div class="panel panel-default border-less">
 				   	<div class="panel-body border-less">
-				      <p><a>Category 1</a></p>
-				      <p><a>Category 2</a></p>
-				      <p><a>Category 3</a></p>
-				      <p><a>Category 4</a></p>
-				      <p><a>Category 5</a></p>
-				      <p><a>Category 6</a></p>
-				      <p><a>Category 7</a></p>
-				      <p><a>Category 8</a></p>
-				      <p><a>Category 9</a></p>
-				      <p><a>Category 10</a></p>
+				      <p><a id="c1">Category 1</a></p>
+				      <p><a id="c2">Category 2</a></p>
+				      <p><a id="c3">Category 3</a></p>
+				      <p><a id="c4">Category 4</a></p>
+				      <p><a id="c5">Category 5</a></p>
+				      <p><a id="c6">Category 6</a></p>
+				      <p><a id="c7">Category 7</a></p>
+				      <p><a id="c8">Category 8</a></p>
+				      <p><a id="c9">Category 9</a></p>
+				      <p><a id="c10">Category 10</a></p>
 				   </div>
 				</div>
 			</div>
@@ -130,4 +129,8 @@
 		</div>
 	</div>
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ STATIC_URL }}js/overview.js"></script>
 {% endblock %}
